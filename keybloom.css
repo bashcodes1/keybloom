@@ -13,6 +13,11 @@
     color: white;
   }
 
+  h2{
+    font-size: 35px;
+    line-height: 55px;
+    color: white;
+  }
 
   p{
     font-size: 16px;
@@ -156,17 +161,17 @@
 
 /* About Us Start */
 
-#About-us{
+#About-us-home{
   background-color:  #0C0C0F;
   padding: 40px 70px;
   
   
 }
-#About-us h1{
+#About-us-home h1{
 text-align: center;
 color: #289186;
 }
-#About-us p{
+#About-us-home p{
   width: 100%;
   text-align: center;
   line-height: 25px;
@@ -177,11 +182,11 @@ color: #289186;
   justify-content: center;
   margin: 30px 0px 15px 0px;
 }
-#About-us a{
+#About-us-home a{
   text-decoration: none;
 }
 
- #About-us .mail-button{
+ #About-us-home .mail-button{
   font-size: 14px;
   font-weight: 600;
   padding: 15px 30px;
@@ -196,7 +201,7 @@ color: #289186;
   justify-content: center;
 }
 
-#About-us .mail-button:hover{
+#About-us-home .mail-button:hover{
   background-color: #289186;
 }
 
@@ -225,9 +230,9 @@ color: #289186;
   align-items: center;
 }
 #services-con1{
-  height: 365px;
+  height: 500px;
   width: 335px;
-  padding: 20px 35px;
+  padding: 15px 15px;
   background: #191919;
   border-radius: 20px;
   margin: 15px;
@@ -533,29 +538,18 @@ padding-top: 250px;
 
 /* about us page */
 /* About us hero image */
-#about-us-img img{
+
+#about-us-img{
+  background-image: url('keyb logo/aboutua.webp');
   width: 100%;
-  height: 75vh;
-  position: relative;
-  
+  background-size:cover;
+  height: 80vh;
+  text-align: left;
+  padding: 150px 30px 0 40px;
+ 
+
 }
-.about-us-img-text{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  color: #fff;
-  top: 200px;
-  bottom: 0;
-  padding-left: 70px;
-}
-#about-us-img h4{
-  color: #289186;
-  margin-bottom: 10px;
-}
-#about-us-img p{
-  margin-top: 20px;
-}
+
 
 #about-us-img button{
   font-size: 14px;
@@ -901,7 +895,7 @@ background-image: url('keyb logo/services1.jpg');
   
 }
 #solutions-con1{
-  height: 250px;
+  height: auto;
   width: 100%;
   padding: 20px 35px;
   position: relative;
@@ -981,52 +975,59 @@ background-image: url('keyb logo/services1.jpg');
 }
 #section2{
   background-color:  #0C0C0F;
-  height: 800px;
-  padding: 50px 50px;
+  padding: 90px 20px;
+
 }
 .image-container{
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-    
+  display:grid;
+  flex-direction:row;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+ padding-top: 20px;
 }
 .album-photo{
-  width: 90%;
-  padding-left: 30px;
-  padding-top: 10px;
+max-width: auto;
+  padding: 5px;
+height: auto;
   
 }
 .avatar{
   transform: none;
   animation: none;
 }
+#About-us-home{
+  padding: 20px 10px;
+}
 
 #Services{
   background-color: #0C0C0F;
   height: auto;
   width: auto;
-  
+  display: flex;
+  flex-direction: column;
 
 }
 
 
 #services-con{
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#solutions-con1 p{
-  font-size: 12px;
-
+#services-con1{
+  height: auto;
+  width: auto;
 }
 
 
 
+
 }
 
-@media  (max-width: 820px){
+@media  (min-width: 768px) and (max-width: 1024px){
   /* Contact us page */
   #Header{
     display: flex;
@@ -1054,12 +1055,12 @@ background-image: url('keyb logo/services1.jpg');
     }
     .contact-us h1::after{
       content: "";
-      width: 270px;
+      width: 260px;
       height: 3px;
       background-color: #000;
       position: absolute;
       top: 160px;
-      left: 100px;
+      left: 270px;
     
     }
 
@@ -1193,13 +1194,14 @@ background-image: url('keyb logo/services1.jpg');
       #services-con{
   display: flex;
   flex-direction: column;
- /* grid-template-columns: 1fr 1fr; */
+ grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
  
 }
 #services-con1{
   width: auto;
+  height: auto;
 }
 
 
